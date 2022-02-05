@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Liberation Sans';
+  src: url('/liberation.ttf');
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/iosevka.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: underline;
+  color: rgba(166, 115, 223, 0.75);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: rgba(166, 115, 223, 1);
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 12px;
+  font-size: 14pt;
+  font-weight: normal;
+  line-height: 24pt;
+  text-indent: 1.5em;
+}
+
+.display {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.listing {
+  margin-bottom: 12px;
+  padding: 12px 20px;
+  background-color: #252526;
+  font-size: 12pt;
+  font-family: 'Iosevka', monospace;
+}
+
+body {
+  background-color: #1d1f21;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: 'Liberation Sans', sans-serif;
+}
+
+#page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+header {
+  padding: 32px 20vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  align-items: center;
+  font-size: 0;
+}
+
+#logo {
+  height: 48px;
+  margin-right: 12px;
+}
+
+#site-name {
+  color:rgba(255, 255, 255, 0.87);
+  font-size: 20pt;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 0 20vw;
+}
+
+footer {
+  padding: 32px 20vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#copy, #source {
+  font-size: 12pt;
+  font-weight: normal;
+}
